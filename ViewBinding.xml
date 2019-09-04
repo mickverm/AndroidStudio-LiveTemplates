@@ -1,0 +1,36 @@
+<templateSet group="ViewBinding">
+  <template name="bv" value="private val $name$ by bindView&lt;$viewType$&gt;(R.id.$resId$)" description="Bind a view using the ViewBinding library." toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="&quot;view&quot;" alwaysStopAt="true" />
+    <variable name="viewType" expression="" defaultValue="&quot;android.widget.TextView&quot;" alwaysStopAt="true" />
+    <variable name="resId" expression="" defaultValue="&quot;view&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="bov" value="private val $name$ by bindOptionalView&lt;$viewType$&gt;(R.id.$resId$)" description="Bind an optional view using the ViewBinding library." toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="&quot;view&quot;" alwaysStopAt="true" />
+    <variable name="viewType" expression="" defaultValue="&quot;android.widget.TextView&quot;" alwaysStopAt="true" />
+    <variable name="resId" expression="" defaultValue="&quot;view&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="bvs" value="private val $name$ by bindViews&lt;$viewType$&gt;(&#10;    R.id.$resId1$, &#10;    R.id.$resId2$&#10;)" description="Bind views using the ViewBinding library." toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="&quot;views&quot;" alwaysStopAt="true" />
+    <variable name="viewType" expression="" defaultValue="&quot;android.widget.TextView&quot;" alwaysStopAt="true" />
+    <variable name="resId1" expression="" defaultValue="&quot;view&quot;" alwaysStopAt="true" />
+    <variable name="resId2" expression="" defaultValue="&quot;view&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="bovs" value="private val $name$ by bindOptionalViews&lt;$viewType$&gt;(&#10;    R.id.$resId1$,&#10;    R.id.$resId2$&#10;)" description="Bind optional views using the ViewBinding library." toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="&quot;views&quot;" alwaysStopAt="true" />
+    <variable name="viewType" expression="" defaultValue="&quot;android.widget.TextView&quot;" alwaysStopAt="true" />
+    <variable name="resId1" expression="" defaultValue="&quot;view&quot;" alwaysStopAt="true" />
+    <variable name="resId2" expression="" defaultValue="&quot;view&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
+</templateSet>
